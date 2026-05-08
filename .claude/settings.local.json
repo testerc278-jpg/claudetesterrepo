@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config *)",
+      "PowerShell($result = powershell -NoProfile -File \"C:\\\\Users\\\\lhaex\\\\.claude\\\\grounding-hook.ps1\" | ConvertFrom-Json; Write-Output \"hookEventName: $\\($result.hookSpecificOutput.hookEventName\\)\"; Write-Output \"additionalContext length: $\\($result.hookSpecificOutput.additionalContext.Length\\) chars\")"
+    ]
+  }
+}
