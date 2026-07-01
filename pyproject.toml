@@ -1,0 +1,22 @@
+[project]
+name = "openprofile"
+version = "0.1.0"
+description = "OSINT business profiling tool for Australian agriculture, horticulture and viticulture entities"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "OpenProfile contributors" }]
+dependencies = []  # intentionally zero third-party deps: runs on a bare Python install
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+openprofile = "openprofile.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["openprofile*"]

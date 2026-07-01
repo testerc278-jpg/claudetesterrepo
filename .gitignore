@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# OpenProfile runtime artifacts
+.openprofile_cache/
+examples/output/
+_inspect/
+
+# Never commit credentials or downloaded third-party tools
+*.env
+.env
+ABN_LOOKUP_GUID*
+*.xlsm
